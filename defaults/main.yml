@@ -1,0 +1,8 @@
+---
+# defaults file for makeittotop.flaskapp-role
+
+app_name: "my_app"
+image_name: "p0bailey/docker-flask"
+app_port: 80
+
+
