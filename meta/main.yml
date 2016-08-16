@@ -17,4 +17,4 @@ galaxy_info:
     - nginx
     - supervisord
 
-  dependencies: []
+dependencies: []
