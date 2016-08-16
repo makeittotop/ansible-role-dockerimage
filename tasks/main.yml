@@ -2,14 +2,14 @@
 # tasks file for makeittotop.flaskapp-role
 
 - name: Download an image and run a docker container with it
-    docker:
-      name: {{ app_name }}
-      image: {{ image_name }}
-      expose:
-      - {{ app_port }}
-      pull: missing
-      state: started
-      ports:
-      - {{ app_port }}:{{ app_port }}
-    become: yes
-    become_method: sudo
+  docker:
+    name: "{{ app_name }}"
+    image: "{{ image_name }}"
+    expose:
+    - "{{ app_port }}"
+    pull: missing
+    state: started
+    ports:
+    - "{{ app_port }}:{{ app_port }}"
+  become: yes
+  become_method: sudo
